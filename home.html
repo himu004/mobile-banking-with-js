@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFS With JS</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main class="flex justify-center pt-2">
+        <div class="mockup-phone ">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-2">
+                    <!-- Home content here -->
+                    <!-- Available Balance Here -->
+                    <div>
+                        <div class="stats shadow">
+                            <div class="stat">
+                              <div class="stat-value">9400</div>
+                              <div class="stat-desc">Available Balance</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- User Action Buttons -->
+                    <div>
+                        <button class="btn btn-lg">Add Money</button>
+                        <button class="btn btn-lg">Cash Out</button>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- Add Money Form -->
+                    <div class="card bg-base-100 w-full max-w-full shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount You Want To Add</span>
+                                </label>
+                                <input id="amount" type="text" placeholder="Amount" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="pin" type="password" placeholder="Verify Your Pin" autocomplete="off" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="button-login" class="btn btn-primary">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script/home.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- Impotant Button -->
+<!-- <button class="flex items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+    Homepage
+</button> -->
