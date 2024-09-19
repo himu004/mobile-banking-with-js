@@ -41,51 +41,105 @@
     <div class="divider"></div>
     <main>
         <!-- Buttons -->
-        <section class="md:w-4/6 w-11/12 mx-auto">
+        <section class="md:w-4/6 w-11/12 mx-auto grid grid-cols-3 justify-center md:gap-5 gap-2 md:px-20 py-5">
             <!-- Add Money -->
             <button
-                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                type="button">
-                <img src="assets/icons/add-money.svg" alt="">
+                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-3 md:text-sm text-xs text-center transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                id="add-money-btn" type="button">
+                <img class="md:w-10 m-2" src="assets/icons/add-money.svg" alt="">
                 Add Money
             </button>
             <!-- Cash Out -->
             <button
-                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                type="button">
-                <img src="assets/icons/cashout.svg" alt="">
+                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-3 md:text-sm text-xs text-center transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                id="cash-out-btn" type="button">
+
+                <img class="md:w-10 m-2" src="assets/icons/cashout.svg" alt="">
                 Cash Out
             </button>
             <!-- Transfer Money -->
             <button
-                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-3 md:text-sm text-xs text-center transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button">
-                <img src="assets/icons/transfer-money.svg" alt="">
+                <img class="md:w-10 m-2" src="assets/icons/transfer-money.svg" alt="">
                 Transfer Money
             </button>
             <!-- Get Bonus -->
             <button
-                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-3 md:text-sm text-xs text-center transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button">
-                <img src="assets/icons/get-bonus.svg" alt="">
+                <img class="md:w-10 m-2" src="assets/icons/get-bonus.svg" alt="">
                 Get Bonus
             </button>
             <!-- Pay Bill -->
             <button
-                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-3 md:text-sm text-xs text-center transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button">
-                <img src="assets/icons/pay-bill.svg" alt="">
+                <img class="md:w-10 m-2" src="assets/icons/pay-bill.svg" alt="">
                 Pay Bill
             </button>
             <!-- Transactions -->
             <button
-                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                class="flex flex-col justify-center items-center rounded-md border border-slate-300 py-2 px-3 md:text-sm text-xs text-center transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                 type="button">
-                <img src="assets/icons/transactions.svg" alt="">
+                <img class="md:w-10 m-2" src="assets/icons/transactions.svg" alt="">
                 Transactions
             </button>
         </section>
         <div class="divider"></div>
+
+        <!-- Forms -->
+
+        <section>
+            <!-- Add Money Form -->
+            <div id="add-money-form" class="md:w-4/6 w-11/12 mx-auto hidden">
+                <h1 class="text-center text-blue-500 text-2xl">Add Money</h1>
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Amount to Add</span>
+                        </label>
+                        <input id="add-money-number" type="text" placeholder="Amount"
+                            class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Pin</span>
+                        </label>
+                        <input id="add-money-pin" type="password" placeholder="Verify Your Pin" autocomplete="off"
+                            class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="btn-add" class="btn btn-primary">Add Money</button>
+                    </div>
+                </form>
+            </div>
+
+             <!-- Cash Out Form -->
+             <div id="cash-out-form" class="md:w-4/6 w-11/12 mx-auto hidden">
+                <h1 class="text-center text-blue-500 text-2xl">Cash Out</h1>
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Amount to Add</span>
+                        </label>
+                        <input id="cash-out-amount" type="text" placeholder="Amount"
+                            class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Pin</span>
+                        </label>
+                        <input id="cash-out-pin" type="password" placeholder="Verify Your Pin" autocomplete="off"
+                            class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn btn-primary">Add Money</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <script src="script/home.js"></script>
